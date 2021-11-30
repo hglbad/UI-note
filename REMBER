@@ -1,0 +1,14 @@
+安卓布局Demo
+
+一、创建项目
+    1、创建新项目；
+    2、配置gradle；
+    3、下载相关库；
+    4、在AndroidManifest中添加相关权限，MainActivity中进行动态权限申请操作；
+    5、app自带title在样式文件中将"parent"设置为:Theme.AppCompat.Light.NoActionBar；
+
+二、布局相关说明
+    1、配置base文件：
+        APP：存放初始化相关配置
+        Constants：存放项目相关参数，url、文件储存地址等
+        BaseActivity、BaseFragment：封装通用方法，ButterKnife初始化及销毁，状态栏属性配置（如果需要沉浸式或者定制配置）
