@@ -6,4 +6,11 @@
         <attr name="scrollEnable" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="LineWaveVoiceView">
+        <attr name="voiceLineColor" format="color" />
+        <attr name="voiceLineWidth" format="color" />
+        <attr name="voiceTextSize" format="dimension" />
+        <attr name="voiceTextColor" format="dimension" />
+        <attr name="updateSpeed" format="color" />
+    </declare-styleable>
 </resources>

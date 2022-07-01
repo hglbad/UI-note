@@ -10,4 +10,5 @@
     <color name="color_2E7EFF">#2E7EFF</color>
     <color name="color_333333">#333333</color>
     <color name="color_767676">#767676</color>
+    <color name="color_accent">#ff0000</color>
 </resources>

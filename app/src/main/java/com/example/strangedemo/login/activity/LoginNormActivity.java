@@ -2,6 +2,7 @@ package com.example.strangedemo.login.activity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import krt.wid.http.MCallBack;
 
 import android.content.Intent;
 import android.os.CountDownTimer;
@@ -19,8 +20,12 @@ import android.widget.TextView;
 
 import com.example.strangedemo.R;
 import com.example.strangedemo.base.BaseActivity;
+import com.example.strangedemo.base.Constants;
 import com.example.strangedemo.dialog.ITosat;
 import com.example.strangedemo.ui.MainActivity;
+import com.lzy.okgo.OkGo;
+import com.lzy.okgo.model.Response;
+import com.lzy.okgo.model.Result;
 
 /**
  * 普通登录页面布局
@@ -109,7 +114,20 @@ public class LoginNormActivity extends BaseActivity {
             return;
         }
 
+        setLogin();
         startActivity(new Intent(LoginNormActivity.this, MainActivity.class));
+    }
+
+    private void setLogin() {
+        OkGo.<Result<Object>>post(Constants.BASE_URL + "login")
+                .params("phone",username.getText().toString())
+                .params("pass",password.getText().toString())
+                .execute(new MCallBack<Result<Object>>(this) {
+                    @Override
+                    public void onSuccess(Response<Result<Object>> response) {
+
+                    }
+                });
     }
 
     @Override
