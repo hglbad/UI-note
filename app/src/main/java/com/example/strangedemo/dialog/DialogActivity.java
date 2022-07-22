@@ -8,7 +8,7 @@ import com.example.strangedemo.R;
 import com.example.strangedemo.base.BaseActivity;
 
 public class DialogActivity extends BaseActivity {
-
+//dialog
     @Override
     public int bindLayout() {
         return R.layout.activity_dialog;
