@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.strangedemo">
-
+    <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,21 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StrangeDemo">
-        <activity android:name=".login.activity.LoginCut2Activity"></activity>
+        <activity android:name=".dialog.DialogActivity"></activity>
+        <activity android:name=".double_demo.MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".login.activity.LoginCut2Activity" />
         <activity android:name=".login.activity.LoginCutActivity" />
         <activity android:name=".ui.MainActivity" />
-        <activity android:name=".login.activity.LoginNormActivity" >
+        <activity android:name=".login.activity.LoginNormActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
     </application>
-
-    <!-- 权限配置 -->
-    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.NFC" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -54,5 +62,7 @@
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.hardware.camera.autofocus" />
+
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
 </manifest>

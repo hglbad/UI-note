@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.strangedemo.base.BaseActivity;
+import com.example.strangedemo.dialog.DialogActivity;
 import com.example.strangedemo.login.activity.LoginCut2Activity;
 import com.example.strangedemo.login.activity.LoginCutActivity;
 import com.example.strangedemo.login.activity.LoginNormActivity;
@@ -33,7 +34,7 @@ public class MainActivity extends BaseActivity {
         return R.layout.activity_main;
     }
 
-    @OnClick({R.id.tv_login, R.id.tv_homepage,R.id.tv_login_2,R.id.tv_login_3})
+    @OnClick({R.id.tv_login, R.id.tv_homepage,R.id.tv_login_2,R.id.tv_login_3,R.id.tv_dialog})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_login:
@@ -47,6 +48,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.tv_homepage:
                 startActivity(new Intent(MainActivity.this, com.example.strangedemo.ui.MainActivity.class));
+                break;
+            case R.id.tv_dialog:
+                startActivity(new Intent(MainActivity.this, DialogActivity.class));
                 break;
             default:
                 break;
