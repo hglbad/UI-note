@@ -34,7 +34,7 @@ public class MainActivity extends BaseActivity {
         return R.layout.activity_main;
     }
 
-    @OnClick({R.id.tv_login, R.id.tv_homepage,R.id.tv_login_2,R.id.tv_login_3,R.id.tv_dialog})
+    @OnClick({R.id.tv_login, R.id.tv_homepage,R.id.tv_login_2,R.id.tv_login_3,R.id.tv_dialog,R.id.tv_ssq})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_login:
@@ -51,6 +51,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.tv_dialog:
                 startActivity(new Intent(MainActivity.this, DialogActivity.class));
+                break;
+            case R.id.tv_ssq:
+                startActivity(new Intent(MainActivity.this, com.example.strangedemo.double_demo.MainActivity.class));
                 break;
             default:
                 break;

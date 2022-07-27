@@ -10,26 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StrangeDemo">
         <activity android:name=".dialog.DialogActivity"></activity>
-        <activity android:name=".double_demo.MainActivity">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
+        <activity android:name=".double_demo.MainActivity"/>
         <activity android:name=".login.activity.LoginCut2Activity" />
         <activity android:name=".login.activity.LoginCutActivity" />
         <activity android:name=".ui.MainActivity" />
         <activity android:name=".login.activity.LoginNormActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
     </application>
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.GET_TASKS" />

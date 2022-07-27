@@ -15,6 +15,7 @@ import butterknife.BindView;
 import com.example.strangedemo.R;
 import com.example.strangedemo.base.BaseActivity;
 import com.example.strangedemo.ui.fragment.HomeFragment;
+import com.example.strangedemo.ui.fragment.ListFragment;
 import com.example.strangedemo.view.SViewPager;
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
@@ -55,7 +56,7 @@ public class MainActivity extends BaseActivity {
 
         adapter = new Adapter(getSupportFragmentManager());
         adapter.addFragment(new HomeFragment());//首页
-        adapter.addFragment(new HomeFragment());//
+        adapter.addFragment(new ListFragment());//
         adapter.addFragment(new HomeFragment());//
         adapter.addFragment(new HomeFragment());//
         viewPager.setAdapter(adapter);

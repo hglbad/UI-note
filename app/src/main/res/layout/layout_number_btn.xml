@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_number_button"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:minHeight="@dimen/dp36"
+              android:orientation="horizontal"
+              android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/button_sub"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_button_left"
+        android:gravity="center"
+        android:minHeight="@dimen/dp36"
+        android:minWidth="@dimen/dp36"
+        android:text="-"
+        android:textColor="@color/selector_number_btn"
+        android:textSize="@dimen/dp18"/>
+
+    <EditText
+        android:id="@+id/text_count"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:digits="0123456789"
+        android:gravity="center"
+        android:inputType="number"
+        android:minWidth="@dimen/dp50"
+        android:paddingBottom="@dimen/dp3"
+        android:paddingLeft="@dimen/dp8"
+        android:paddingRight="@dimen/dp8"
+        android:paddingTop="@dimen/dp3"
+        android:singleLine="true"
+        android:text="1"
+        android:textColor="#000"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/dp14"/>
+
+    <TextView
+        android:id="@+id/button_add"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_button_right"
+        android:gravity="center"
+        android:minHeight="@dimen/dp36"
+        android:minWidth="@dimen/dp36"
+        android:text="+"
+        android:textColor="@color/select_bumber_btn1"
+        android:textSize="@dimen/dp18"/>
+</LinearLayout>
