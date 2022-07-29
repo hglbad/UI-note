@@ -51,7 +51,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public void initView() {
 
-        viewPager.setCanScroll(false);
+        viewPager.setCanScroll(true);//设置滑动
         viewPager.setOffscreenPageLimit(5);
 
         adapter = new Adapter(getSupportFragmentManager());
